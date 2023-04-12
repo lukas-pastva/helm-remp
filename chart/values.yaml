@@ -1,0 +1,36 @@
+namespace: web-conveior
+type: Deployment
+#tolerations:
+#  - web
+#nodeAffinity:
+#  - key: asdf
+#    values:
+#      - asdf
+#      - fdsa
+istioEnabled: false
+#secretRegistry: "ZW1wdHk="
+#oauthClient: "ZW1wdHk="
+#oauthSecret: "ZW1wdHk="
+
+
+pods: {}
+#  - name: web-test
+#    repo: registry.hub.docker.com/lukaspastva/conveior-web:0.1.44
+#    resources: 80
+#    replicaCount: 1
+#    privileged: false
+#    labels:
+#      checksum: {{ include (print $.Template.BasePath "/cm-application.yml") . | sha256sum }}
+#    ports:
+#      - name: http
+#        port: 80
+#        domains:
+#          - "conveior.io"
+#          - "www.conveior.iok"
+#        paths:
+#          - "/"
+#configMaps:
+#  - name: conveior-config
+#    data:
+#      key1: value1
+#      key2: value2
